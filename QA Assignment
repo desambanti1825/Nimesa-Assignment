@@ -2,8 +2,9 @@ import requests
 
 def get_weather_data(date):
     # Replace 'your_api_key' with the actual API key from your weather data provider
-    api_key = 'your_api_key'
-    url = f'https://api.weatherprovider.com/weather?date={date}&appid={api_key}'
+    api_key = 'appid=b6907d289e10d714a6e88b30761fae22'
+    response = requests.get(url)
+    url = f'https://samples.openweathermap.org/data/2.5/forecast/hourly?q=London,us&appid=b6907d289e10d714a6e88b30761fae22'
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
