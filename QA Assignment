@@ -1,5 +1,3 @@
-import requests
-
 def get_weather_data(date):
     # Replace 'your_api_key' with the actual API key from your weather data provider
     api_key = 'appid=b6907d289e10d714a6e88b30761fae22'
